@@ -83,4 +83,4 @@ node index.js
 
 - **Email:** owaishk627@gmail.com
 - **Phone:** +91-9157700722
-- **GitHub:** [github.com/mohamadowaishkhalak](https://github.com/mohamadowaishkhalak)
+- **GitHub:** [github.com/mohamadowaishkhalak](https://github.com/Owaish786)
