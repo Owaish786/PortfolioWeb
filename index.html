@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamad Owaish Khalak | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'system-ui', 'sans-serif'],
+            fira: ['Fira Code', 'monospace'],
+          },
+          colors: {
+            primary: { DEFAULT: '#6c63ff', dark: '#5a52d5', light: '#8b83ff' },
+            accent: '#00d2ff',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="font-inter">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">MOK<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="inline-block px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide mb-4 hero-greeting-badge">Hello, I'm</p>
+        <h1 class="hero-name">Mohamad Owaish<br /><span class="highlight">Khalak</span></h1>
+        <p class="hero-tagline">Computer Science Student &amp; Full-Stack Developer</p>
+        <p class="hero-description">
+          B.Tech in Computer Science &amp; Engineering at Pandit Deendayal Energy University, Gandhinagar.
+          Passionate about building scalable web applications, competitive programming, and exploring emerging technologies.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40">View My Work</a>
+          <a href="#contact" class="btn btn-outline backdrop-blur-sm">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Owaish786" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/owaish-khalak-89b1bb27a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:owaishk627@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+919157700722" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-ring"></div>
+          <img src="photo.jpeg" alt="Mohamad Owaish Khalak" class="hero-photo ring-4 ring-primary/20" />
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-stats">
+        <div class="stat-card group">
+          <div class="stat-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-graduation-cap"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">8.62</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+        <div class="stat-card group">
+          <div class="stat-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-layer-group"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">Full-Stack</span>
+            <span class="stat-label">Developer</span>
+          </div>
+        </div>
+        <div class="stat-card group">
+          <div class="stat-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-certificate"></i></div>
+          <div class="stat-info">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p>
+          I'm a passionate Computer Science student at <strong>Pandit Deendayal Energy University</strong>, 
+          currently in my B.Tech program with a CGPA of <strong>8.62</strong>. I love turning ideas into 
+          real-world applications using modern web technologies.
+        </p>
+        <p>
+          As a <strong>Core Team Member of ACM Student Chapter</strong> at PDEU, I've contributed to visual 
+          branding and organizing events. My journey in tech spans from competitive programming to building 
+          full-stack web applications.
+        </p>
+        <p>
+          I'm always eager to learn new technologies and take on challenging projects that push my boundaries.
+          My areas of interest include Full-Stack Development, Computer Graphics, Algorithms, and Competitive Programming.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category group">
+          <h3><i class="fas fa-laptop-code"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-category group">
+          <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Flutter</span>
+          </div>
+        </div>
+        <div class="skill-category group">
+          <h3><i class="fas fa-database"></i> Databases &amp; Cloud</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">AWS</span>
+          </div>
+        </div>
+        <div class="skill-category group">
+          <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">Android Studio</span>
+          </div>
+        </div>
+        <div class="skill-category group">
+          <h3><i class="fas fa-desktop"></i> Operating Systems</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Android</span>
+          </div>
+        </div>
+        <div class="skill-category group">
+          <h3><i class="fas fa-brain"></i> Areas of Interest</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Full-Stack Development</span>
+            <span class="skill-tag">Competitive Programming</span>
+            <span class="skill-tag">Computer Graphics</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Personal <span class="highlight">Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card group">
+          <div class="project-header">
+            <div class="project-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-truck"></i></div>
+            <span class="project-date">Nov 2025</span>
+          </div>
+          <h3 class="project-title">Fleet Vehicle Management System</h3>
+          <p class="project-subtitle">Full Stack Web Application</p>
+          <p class="project-desc">
+            A comprehensive full-stack web application to manage fleet operations including vehicles, 
+            drivers, bookings, trips, maintenance, and payments.
+          </p>
+          <ul class="project-features">
+            <li>Built an interactive frontend using React.js for managing and viewing fleet data</li>
+            <li>Implemented backend APIs using Node.js and Express.js for application logic and database communication</li>
+            <li>Designed a relational database schema in MySQL with multiple tables for fleet management</li>
+            <li>Integrated frontend and backend for CRUD operations &mdash; adding vehicles, assigning drivers, tracking trips</li>
+            <li>Populated the database with sample data to simulate real-world fleet management scenarios</li>
+          </ul>
+          <div class="project-tech">
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link hover:gap-3 transition-all"><i class="fab fa-github"></i> Source Code</a>
+            <a href="#" class="project-link hover:gap-3 transition-all"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience &amp; <span class="highlight">Responsibility</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content group">
+            <div class="timeline-header">
+              <h3>Core Team Member</h3>
+              <span class="timeline-date">Aug 2024 &ndash; Jul 2025</span>
+            </div>
+            <h4 class="timeline-org">ACM (Association for Computing Machinery) &mdash; PDEU</h4>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat</p>
+            <ul class="timeline-details">
+              <li>Worked as a core team member of the ACM Student Chapter</li>
+              <li>Contributed to visual branding for ACM Student Chapter events and activities</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content group">
+            <div class="timeline-header">
+              <h3>Civic and Social Service Intern (CSSI)</h3>
+              <span class="timeline-date">May 2023</span>
+            </div>
+            <h4 class="timeline-org">Pandit Deendayal Energy University</h4>
+            <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gandhinagar, Gujarat</p>
+            <ul class="timeline-details">
+              <li>Participated in civic and social service activities as part of the university program</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Education</span></h2>
+      <div class="education-grid">
+        <div class="edu-card group">
+          <div class="edu-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-university"></i></div>
+          <div class="edu-info">
+            <h3>Pandit Deendayal Energy University</h3>
+            <p class="edu-degree">B. Tech in Computer Science &amp; Engineering</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Gujarat</p>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="fas fa-calendar-alt"></i> 2023 &ndash; 2027</span>
+              <span class="edu-grade"><i class="fas fa-star"></i> CGPA: 8.62</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card group">
+          <div class="edu-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <h3>Aleef English Medium School</h3>
+            <p class="edu-degree">Gujarat Secondary &amp; Higher Secondary Education Board</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Bharuch, Gujarat</p>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="fas fa-calendar-alt"></i> 2023</span>
+              <span class="edu-grade"><i class="fas fa-star"></i> 86%</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card group">
+          <div class="edu-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-school"></i></div>
+          <div class="edu-info">
+            <h3>Radiance English Medium School</h3>
+            <p class="edu-degree">Gujarat Secondary &amp; Higher Secondary Education Board</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Gujarat</p>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="fas fa-calendar-alt"></i> 2021</span>
+              <span class="edu-grade"><i class="fas fa-star"></i> 86%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <h2 class="section-title">Certifi<span class="highlight">cates</span></h2>
+      <div class="certificates-grid">
+        <div class="cert-card group">
+          <div class="cert-left">
+            <div class="cert-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3>ACM x GDG Competitive Programming Workshop</h3>
+            <p class="cert-issuer">ACM PDEU Student Chapter</p>
+          </div>
+          <span class="cert-date">Sept 2024</span>
+        </div>
+        <div class="cert-card group">
+          <div class="cert-left">
+            <div class="cert-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3>Java Programming &ndash; Beginner to Master</h3>
+            <p class="cert-issuer">Udemy</p>
+          </div>
+          <span class="cert-date">2024</span>
+        </div>
+        <div class="cert-card group">
+          <div class="cert-left">
+            <div class="cert-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3>Powering Possibility: LLMs and GenAI</h3>
+            <p class="cert-issuer">ACM PDEU Student Chapter</p>
+          </div>
+          <span class="cert-date">2025</span>
+        </div>
+        <div class="cert-card group">
+          <div class="cert-left">
+            <div class="cert-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3>LLM Workshop &ndash; Certificate of Participation</h3>
+            <p class="cert-issuer">Workshop</p>
+          </div>
+          <span class="cert-date">2026</span>
+        </div>
+        <div class="cert-card group">
+          <div class="cert-left">
+            <div class="cert-icon group-hover:scale-110 transition-transform duration-300"><i class="fas fa-award"></i></div>
+          </div>
+          <div class="cert-body">
+            <h3>Understanding Incubation &amp; Entrepreneurship</h3>
+            <p class="cert-issuer">NPTEL</p>
+          </div>
+          <span class="cert-date">2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="contact-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:owaishk627@gmail.com">owaishk627@gmail.com</a>
+              <a href="mailto:23bcp384@sot.pdpu.ac.in">23bcp384@sot.pdpu.ac.in</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919157700722">+91-9157700722</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Gandhinagar, Gujarat, India</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:owaishk627@gmail.com" class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">MOK<span class="dot">.</span></a>
+        <p>&copy; 2026 Mohamad Owaish Khalak. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
