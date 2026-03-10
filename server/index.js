@@ -15,12 +15,15 @@ app.use(cors({
 app.use(express.json());
 
 // Connect to MongoDB
+if (!process.env.MONGO_URI) {
+  console.error('ERROR: MONGO_URI environment variable is not set.');
+}
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => {
     console.error('MongoDB connection error:', err.message);
-    process.exit(1);
   });
 
 // Health check
