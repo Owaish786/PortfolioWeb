@@ -23,6 +23,11 @@ mongoose
     process.exit(1);
   });
 
+// Health check
+app.get('/', (_req, res) => {
+  res.json({ status: 'ok', message: 'Portfolio API is running' });
+});
+
 // POST /api/contact – save a message
 app.post('/api/contact', async (req, res) => {
   try {
